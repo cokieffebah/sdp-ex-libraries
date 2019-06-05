@@ -8,9 +8,6 @@ libraries{
       docker_args = "--network=governance_sdp"  // docker runtime args
     }
   }
-  github{
-    enterprise = true
-  }
   sonarqube{
     enforce_quality_gate = true
   }
