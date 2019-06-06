@@ -1,14 +1,14 @@
-on_commit to: github-library, {
+on_commit to: 'github-library', {
   build()
   deploy_to dev
 }
 
-on_merge to: github-library, {
+on_merge to: 'github-library', {
   build()
   deploy_to dev
 }
 
-on_pull_request to: github-library, {
+on_pull_request to: 'github-library', {
   build()
   static_code_analysis()
 }
