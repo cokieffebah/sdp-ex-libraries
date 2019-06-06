@@ -9,7 +9,6 @@ libraries{
     }
   }
   github{
-    enterprise = true
   }
   sonarqube{
     enforce_quality_gate = true
