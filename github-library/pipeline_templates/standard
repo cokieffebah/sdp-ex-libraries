@@ -1,1 +1,14 @@
-static_code_analysis()
+on_commit to: master, {
+  build()
+  deploy_to dev
+}
+
+on_merge to: master, {
+  build()
+  deploy_to dev
+}
+
+on_pull_request to: master, {
+  build()
+  static_code_analysis()
+}
