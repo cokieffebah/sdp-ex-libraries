@@ -6,7 +6,7 @@ on_merge to: 'github-library', {
   build()
 }
 
-on_pull_request to: /github-library/, {
+on_pull_request to: 'github-library', {
   build()
   static_code_analysis()
 }
