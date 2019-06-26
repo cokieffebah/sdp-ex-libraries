@@ -9,7 +9,7 @@ libraries{
     }
   }
   github{
-    enterprise=true
+    source_type= "github_enterprise_not"
   }
   sonarqube{
     enforce_quality_gate = true
