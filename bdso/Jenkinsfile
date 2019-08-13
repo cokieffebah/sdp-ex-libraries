@@ -1,0 +1,3 @@
+node{
+s3_download([bucket:'com-okieffe-static', path:'index.html', file:'index.html'])
+}
