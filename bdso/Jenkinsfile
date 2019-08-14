@@ -1,4 +1,4 @@
 node{
-s3_download([bucket:'com-okieffe-static', path:'index.html', file:'index.html', force:true])
+s3_download([bucket:'com-okieffe-static', path:'index.html', file:'index.html', force:true, region:'us-east-1'])
 s3_upload([bucket:'com-okieffe-static', path:'index2.html', file:'index.html', force:true])
 }
