@@ -2,6 +2,9 @@
 node{
   s3_download([path:'index.html', file:'index.html', force:true])
   s3_upload([path:'index2.html', file:'index.html', force:true])
-  s3_delete([path:'index2.html'])
+  
   s3_copy([fromPath:'index.html', toPath:'index3.html'])
+  if( s3_object_exists([path:'index2.html') ){
+      s3_delete([path:'index2.html'])
+  }
 }
