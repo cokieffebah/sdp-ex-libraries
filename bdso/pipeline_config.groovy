@@ -4,7 +4,7 @@ libraries{
   s3{
     bucket = 'com-okieffe-static'
     region = 'us-east-1'
-    credential = 'AwsBsdo'
+    credentials = 'AwsBsdo'
   }
 }
 
