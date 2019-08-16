@@ -1,4 +1,4 @@
-
+stage('s3-test'){
 node{
   s3_download([path:'index.html', file:'index.html', force:true])
   s3_upload([path:'index2.html', file:'index.html', force:true])
@@ -13,4 +13,5 @@ node{
   println ff.length
   
   println s3_presign_url([key:'index.html'])                       
+}
 }
