@@ -8,7 +8,7 @@ node{
       s3_delete([path:'index2.html'])
   }
   
-  def ff = s3_find_files([path:'index3.html])
+  def ff = s3_find_files([path:'index3.html'])
   print ff.path
   println ff.length
   
