@@ -1,0 +1,3 @@
+stage("owasp-test"){
+   static_dependency_check_analysis()
+}
