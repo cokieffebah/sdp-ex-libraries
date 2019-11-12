@@ -26,13 +26,13 @@ libraries{
             cred = "github"
         }
     }
-    aws{
-        /*
+    /* aws{
+        
             application repositories should specifier the 
             identifier key
-        */
+        
         merge = true
-    }    
+    }  */  
     github{
         source_type = "github"
     }
