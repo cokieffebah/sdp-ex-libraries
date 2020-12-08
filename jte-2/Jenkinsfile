@@ -1,0 +1,5 @@
+on_change(to: "jte-2"){
+  stage("jte-2"){
+    sh "echo 'jte-2-branch; hooray'"
+  }
+}
