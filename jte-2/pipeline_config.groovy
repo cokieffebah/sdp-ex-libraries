@@ -1,9 +1,18 @@
-allow_scm_jenkinsfile = true
-
 application_environments{
     Dev
     Test
     Prod
+}
+
+@merge libraries{
+    gradle
+    sonarqube
+    ansible
+    helper
+}
+
+jte{
+  allow_scm_jenkinsfile = true 
 }
 
 keywords{
@@ -15,14 +24,12 @@ keywords{
     test    =  /^[Tt]est(ing|)$/
 }
 
-libraries{
-    // allow applications to add additional libraries
-    merge = true
+@merge libraries{
     sdp{
         images{
             registry = "https://docker.pkg.github.com"
             repository = "boozallen/sdp-images"
-            cred = "github"
+            cred = "cokieffebah"
         }
     }
 
