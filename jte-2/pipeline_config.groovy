@@ -28,7 +28,7 @@ keywords{
     }
     
     git{
-        gitlab
+        github
     }
     owasp_dep_check{
         merge = true
