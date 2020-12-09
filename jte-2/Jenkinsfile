@@ -3,3 +3,5 @@ on_change(to: "jte-2"){
     sh "echo 'jte-2-branch; hooray'"
   }
 }
+
+gitlab.get_source_branch()
