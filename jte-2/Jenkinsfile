@@ -1,1 +1,2 @@
+println "jenkinsfile start"
 gitlab.get_source_branch()
