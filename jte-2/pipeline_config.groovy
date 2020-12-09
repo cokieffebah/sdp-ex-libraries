@@ -4,13 +4,6 @@ application_environments{
     Prod
 }
 
-@merge libraries{
-    gradle
-    sonarqube
-    ansible
-    helper
-}
-
 jte{
   allow_scm_jenkinsfile = true 
 }
@@ -34,9 +27,8 @@ keywords{
     }
 
     git{
-        github
+        gitlab
     }
-    sonarqube
     owasp_dep_check{
         merge = true
         cvss_threshold = "11"
