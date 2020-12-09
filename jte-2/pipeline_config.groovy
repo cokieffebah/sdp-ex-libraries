@@ -33,8 +33,8 @@ keywords{
         }
     }
 
-    github{
-        distribution = "github"
+    git{
+        github
     }
     sonarqube
     owasp_dep_check{
