@@ -3,6 +3,9 @@ node{
 try{    
 checkout scm
 } catch(e){ 
+    getBinding().getVariables().each{ k, v ->
+            println "${k}: ${v}"
+          }
     println e
 }
 }
