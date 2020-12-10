@@ -1,14 +1,6 @@
 println "jenkinsfile start"
-node{
-try{    
-checkout scm
-} catch(e){ 
-    
-    println e
-} finally {
-    getBinding().getVariables().each{ k, v ->
-            println "${k}: ${v}"
-          }
-}
+
+node {
+    checkout scm
 }
 //gitlab.get_source_branch()
