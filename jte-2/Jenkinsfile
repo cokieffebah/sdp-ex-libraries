@@ -1,8 +1,2 @@
 println "jenkinsfile start"
-
-
-node {
-cleanWs()
-    checkout scm
-}
-//gitlab.get_source_branch()
+gitlab.get_source_branch()

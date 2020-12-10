@@ -19,17 +19,17 @@ keywords{
 
 @merge libraries{
     
-    /*sdp{
+    sdp{
         images{
             registry = "https://docker.pkg.github.com"
             repository = "boozallen/sdp-images"
             cred = "cokieffebah"
         }
-    }*/
+    }
     
-    /*git{
+    git{
         gitlab
-    }*/
+    }
     owasp_dep_check{
         merge = true
         cvss_threshold = "11"
