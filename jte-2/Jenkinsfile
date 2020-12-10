@@ -1,5 +1,9 @@
 println "jenkinsfile start"
 node{
+try{    
 checkout scm
+} catch(e){ 
+    println e
+}
 }
 //gitlab.get_source_branch()
