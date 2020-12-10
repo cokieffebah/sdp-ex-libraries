@@ -1,5 +1,6 @@
 println "jenkinsfile start"
 
+cleanWs()
 node {
     checkout scm
 }
