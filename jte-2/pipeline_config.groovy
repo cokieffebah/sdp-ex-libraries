@@ -27,9 +27,9 @@ keywords{
         }
     }*/
     
-    git{
+    /*git{
         gitlab
-    }
+    }*/
     owasp_dep_check{
         merge = true
         cvss_threshold = "11"
