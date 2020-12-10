@@ -3,10 +3,12 @@ node{
 try{    
 checkout scm
 } catch(e){ 
+    
+    println e
+} finally {
     getBinding().getVariables().each{ k, v ->
             println "${k}: ${v}"
           }
-    println e
 }
 }
 //gitlab.get_source_branch()
